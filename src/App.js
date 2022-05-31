@@ -1,29 +1,20 @@
 import './App.css';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Main from './components/Main';
 
 const App = () => {
 	return (
-		<div>
+		<div className='app-wrapper'>
+
 			<Header />
-			<div className="App">
-				Hello
-			</div>
-			<Footer />
+
+			<Navbar />
+
+			<Main />
+
 		</div>
 	);
 };
-
-const Header = () => {
-	return (
-		<header className="header">Header</header>
-	);
-};
-
-const Footer = () => {
-	return (
-		<footer className="footer">Footer</footer>
-	);
-};
-
-
 
 export default App;
