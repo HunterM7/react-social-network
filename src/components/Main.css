@@ -1,0 +1,14 @@
+/*? Main */
+
+.main {
+	grid-area: main;
+
+	background-color: lightskyblue;
+}
+
+.main__header {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	object-position: center;
+}
