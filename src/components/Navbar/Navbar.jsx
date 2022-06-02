@@ -7,49 +7,21 @@ const Navbar = () => {
 
 			<ul className={style.nav__list}>
 
-				<NavItem status='active' />
+				<NavItem name='Feed' status='active' />
 
-				<NavItem />
+				<NavItem name='My Community' />
 
-				<NavItem />
+				<NavItem name='Messages' />
 
-				<NavItem />
+				<NavItem name='Notification' updates='2' />
 
-				<NavItem />
+				<NavItem name='Explore' />
 
-				<NavItem />
+				<NavItem name='Profile' />
 
-				<NavItem />
+				<NavItem name='Settings' />
 
-				<NavItem />
-
-				{/* <li className={style.nav__item}>
-					<a className={style.nav__link} href="#">My community</a>
-				</li>
-
-				<li className={style.nav__item}>
-					<a className={style.nav__link} href="#">Messages</a>
-				</li>
-
-				<li className={`${style.nav__item} ${style.alert}`}>
-					<a className={style.nav__link} href="#">Notification</a>
-				</li>
-
-				<li className={style.nav__item}>
-					<a className={style.nav__link} href="#">Explore</a>
-				</li>
-
-				<li className={style.nav__item}>
-					<a className={style.nav__link} href="#">Profile</a>
-				</li>
-
-				<li className={style.nav__item}>
-					<a className={style.nav__link} href="#">Settings</a>
-				</li>
-
-				<li className={style.nav__item}>
-					<a className={style.nav__link} href="#">Logout</a>
-				</li> */}
+				<NavItem name='Logout' />
 
 			</ul>
 

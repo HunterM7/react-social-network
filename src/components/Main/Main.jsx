@@ -1,9 +1,16 @@
 import './Main.css'
 import Profile from './Profile/Profile';
+import Messages from './Messages/Messages';
 
 const Main = () => {
 	return (
-		<Profile />
+		<main className="main">
+
+			<Profile />
+
+			{/* <Messages /> */}
+
+		</main>
 	);
 };
 

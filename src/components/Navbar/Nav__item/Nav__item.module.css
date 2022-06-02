@@ -36,7 +36,7 @@
 	padding: 15px 30px 15px 56px;
 }
 
-.nav__item .nav__link::before {
+.nav__link::before {
 	content: '';
 	display: block;
 	width: 20px;
@@ -48,9 +48,76 @@
 	transform: translateY(-50%);
 
 	background-color: #4e5d78;
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+}
+
+/* Feed */
+
+.nav__item:first-of-type
+.nav__link::before {
+	-webkit-mask-image: url('/public/img/navbar/feed.svg');
+	mask-image: url('/public/img/navbar/feed.svg');
+}
+
+/* Community */
+
+.nav__item:nth-of-type(2)
+.nav__link::before {
 	-webkit-mask-image: url('/public/img/navbar/community.svg');
 	mask-image: url('/public/img/navbar/community.svg');
 }
+
+/* Messages */
+
+.nav__item:nth-of-type(3)
+.nav__link::before {
+	-webkit-mask-image: url('/public/img/navbar/messages.svg');
+	mask-image: url('/public/img/navbar/messages.svg');
+}
+
+/* Notification */
+
+.nav__item:nth-of-type(4)
+.nav__link::before {
+	-webkit-mask-image: url('/public/img/navbar/notification.svg');
+	mask-image: url('/public/img/navbar/notification.svg');
+}
+
+/* Explore */
+
+.nav__item:nth-of-type(5)
+.nav__link::before {
+	-webkit-mask-image: url('/public/img/navbar/explore.svg');
+	mask-image: url('/public/img/navbar/explore.svg');
+}
+
+/* Profile */
+
+.nav__item:nth-of-type(6)
+.nav__link::before {
+	-webkit-mask-image: url('/public/img/navbar/profile.svg');
+	mask-image: url('/public/img/navbar/profile.svg');
+}
+
+/* Settings */
+
+.nav__item:nth-of-type(7)
+.nav__link::before {
+	-webkit-mask-image: url('/public/img/navbar/settings.svg');
+	mask-image: url('/public/img/navbar/settings.svg');
+}
+
+/* Logout */
+
+.nav__item:nth-of-type(8)
+.nav__link::before {
+	-webkit-mask-image: url('/public/img/navbar/logout.svg');
+	mask-image: url('/public/img/navbar/logout.svg');
+}
+
+/* ------------------ */
 
 .nav__item.alert .nav__link::after {
 	content: '2';

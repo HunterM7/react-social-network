@@ -14,6 +14,7 @@ body {
 
 .app-wrapper {
 	max-width: 1440px;
+	height: 100vh;
 	margin: 0 auto;
 
 	display: grid;
@@ -22,5 +23,5 @@ body {
 	grid-gap: 0px;
 	grid-template-areas:
 								"header header header"
-								"nav main friends";
+								"nav main main";
 }

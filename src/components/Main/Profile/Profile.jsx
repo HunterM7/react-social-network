@@ -2,11 +2,27 @@ import './Profile.css'
 
 const Profile = () => {
 	return (
-		<main className='main'>
+		<section className='profile'>
 
-			<img className='main__header' src="https://w-dog.ru/wallpapers/9/7/366851744811007/tropiki-nebo-more-okean-ostrov-pesok-plyazh-palma.jpg" alt="top img" />
+			<div className="header">
 
-		</main>
+				<div className="header__bg">
+					<button className="header__bg-btn">Edit Cover Photo</button>
+				</div>
+
+				<div className="card header__card">
+
+					<div className="card__img"></div>
+					<p className="card__name">Anton Hunter</p>
+					<p className="card__desc">Front-end Developer</p>
+
+				</div>
+
+				<button className="header__info-btn">Edit basic info</button>
+
+			</div>
+
+		</section>
 	);
 };
 
