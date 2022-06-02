@@ -39,7 +39,7 @@
 	left: 0;
 	transform: translateY(-50%);
 
-	background: url('https://cdn-user-icons.flaticon.com/39195/39195805/1654083169513.svg?token=exp=1654084076~hmac=130d25201100cbe33a40828d13d123ad') center / contain no-repeat;
+	background: url('/public/img/logo.svg') center / contain no-repeat;
 }
 
 .header__search {
@@ -119,5 +119,5 @@
 
 	border-radius: 8px;
 
-	background: url('https://sun9-74.userapi.com/impf/c851028/v851028032/17167e/ZIezFklvWiU.jpg?size=129x130&quality=96&sign=46a7f5161d5e7b350a7c80d00bc07c51&c_uniq_tag=TM9RxfcPq1oq3HJ6DeiqDH9d7jLSZ0RIxTAgEcTSs9Y&type=album') center / cover no-repeat;
+	background: url('/public/img/avatar.jpg') center / cover no-repeat;
 }

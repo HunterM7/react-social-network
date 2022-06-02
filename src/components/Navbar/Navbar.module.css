@@ -1,0 +1,13 @@
+/*? Navbar */
+
+.nav {
+	grid-area: nav;
+
+	padding: 10px 20px;
+}
+
+.nav__list {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}

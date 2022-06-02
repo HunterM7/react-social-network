@@ -1,5 +1,5 @@
 import './Main.css'
-import Profile from './Profile';
+import Profile from './Profile/Profile';
 
 const Main = () => {
 	return (
