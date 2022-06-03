@@ -22,6 +22,8 @@ const Profile = () => {
 
 			</div>
 
+			<div className="profile__info"></div>
+
 		</section>
 	);
 };

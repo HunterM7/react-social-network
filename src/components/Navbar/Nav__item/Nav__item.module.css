@@ -1,28 +1,14 @@
 /*? Nav item */
 
 .nav__item {
-	color: #4e5d78;
-
 	width: 100%;
 
 	margin-bottom: 12px;
 
-	border-radius: 10px;
-
-	display: inline-block;
 	position: relative;
 }
 
-.nav__item.active {
-	background-color: #4e5d78;
-}
-
 .nav__item.active .nav__link {
-	color: #fff;
-}
-
-.nav__item.active .nav__link::before {
-	background-color: #fff;
 }
 
 .nav__link {
@@ -30,10 +16,11 @@
 	font-weight: 500;
 	color: #4e5d78;
 
-
-	display: inline-block;
-
+	display: block;
+	
 	padding: 15px 30px 15px 56px;
+
+	border-radius: 10px;
 }
 
 .nav__link::before {
@@ -51,6 +38,16 @@
 	mask-size: contain;
 	mask-repeat: no-repeat;
 	mask-position: center;
+}
+
+.nav__link.active {
+	color: #fff;
+
+	background-color: #4e5d78;
+}
+
+.nav__link.active::before {
+	background-color: #fff;
 }
 
 /* Feed */
@@ -127,7 +124,7 @@
 
 	position: absolute;
 	top: 50%;
-	right: 0;
+	right: 20px;
 	transform: translateY(-42%);
 
 	font-size: 12px;

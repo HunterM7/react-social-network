@@ -1,4 +1,6 @@
 import style from './Header.module.css';
+import { NavLink } from 'react-router-dom';
+import Searchbar from '../other/Searchbar/Searchbar';
 
 const Header = () => {
 	return (
@@ -6,16 +8,14 @@ const Header = () => {
 
 			<div className={style.header__logo}>
 
-				<a href="#" className={style.header__link}>Meetmax</a>
+				<NavLink to='/feed' className={style.header__link}>Meetmax</NavLink>
 
 			</div>
 
-			<div className={style.header__search}>
-
-				<input type="text" className={style.searchbar} placeholder="Search for something here..." />
-				<button className={style.searchbar__btn}></button>
-
+			<div className={style.header__searchbar}>
+				<Searchbar placeholder='Search for something here...' />
 			</div>
+
 
 			<div className={style.header__profile}>
 

@@ -1,0 +1,21 @@
+/*? FriendsScroll */
+
+.scroll {
+	width: 100%;
+	height: 80px;
+
+	display: flex;
+	flex-direction: row;
+
+	overflow-x: auto;
+}
+
+.scroll::-webkit-scrollbar {
+	display: none;
+}
+
+.scroll__item {}
+
+.scroll__item:not(:last-of-type) {
+	margin-right: 20px;
+}

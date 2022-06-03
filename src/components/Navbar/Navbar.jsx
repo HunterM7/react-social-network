@@ -7,21 +7,21 @@ const Navbar = () => {
 
 			<ul className={style.nav__list}>
 
-				<NavItem name='Feed' status='active' />
+				<NavItem name='Feed' rel='feed' />
 
-				<NavItem name='My Community' />
+				<NavItem name='My Community' rel='community' />
 
-				<NavItem name='Messages' />
+				<NavItem name='Messages' rel='messages' />
 
-				<NavItem name='Notification' updates='2' />
+				<NavItem name='Notification' rel='notification' updates='2' />
 
-				<NavItem name='Explore' />
+				<NavItem name='Explore' rel='explore' />
 
-				<NavItem name='Profile' />
+				<NavItem name='Profile' rel='profile' />
 
-				<NavItem name='Settings' />
+				<NavItem name='Settings' rel='settings' />
 
-				<NavItem name='Logout' />
+				<NavItem name='Logout' rel='logout' />
 
 			</ul>
 

@@ -1,5 +1,18 @@
 /*? Friends */
 
 .friends {
-	grid-area: friends;
+	width: 100%;
+	height: 100%;
+
+	padding: 0 20px;
 }
+
+.friends__searchbar {
+	margin-bottom: 30px;
+}
+
+.friends__scroll {
+	margin-bottom: 40px;
+}
+
+.friends__list {}

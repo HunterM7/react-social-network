@@ -1,0 +1,89 @@
+/*? Friends List Item */
+
+.card {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+
+.card__name {
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--color-primary);
+
+	flex-grow: 1;
+}
+
+.card__status {
+	font-size: 12px;
+	font-weight: 500;
+	color: var(--color-gray-3);
+}
+
+.card__status--online,
+.card__status--offline {
+	width: 8px;
+	height: 8px;
+	
+	border-radius: 50%;
+}
+
+.card__status--online {
+	background-color: var(--color-green);
+}
+
+.card__status--offline {
+	background-color: var(--color-gray-3);
+}
+
+.card__img {
+	display: block;
+	width: 40px;
+	height: 40px;
+
+	margin-right: 20px;
+
+	flex-shrink: 0;
+
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.card__img.id1 {
+	background-image: url('/public/img/photos/id1.webp');
+}
+
+.card__img.id2 {
+	background-image: url('/public/img/photos/id2.jpeg');
+}
+
+.card__img.id3 {
+	background-image: url('/public/img/photos/id3.jpeg');
+}
+
+.card__img.id4 {
+	background-image: url('/public/img/photos/id4.jpeg');
+}
+
+.card__img.id5 {
+	background-image: url('/public/img/photos/id5.jpeg');
+}
+
+.card__img.id6 {
+	background-image: url('/public/img/photos/id6.jpeg');
+}
+
+.card__img.id7 {
+	background-image: url('/public/img/photos/id7.jpeg');
+}
+
+.card__img.id8 {
+	background-image: url('/public/img/photos/id8.jpeg');
+}
+
+.card__img.id9 {
+	background-image: url('/public/img/photos/id9.jpg');
+}
