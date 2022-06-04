@@ -1,0 +1,163 @@
+/*? Message */
+
+.message {
+	max-width: 93%;
+
+	margin-right: auto;
+
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto;
+	grid-template-areas:	"img text btn"
+								". time .";
+	justify-content: start;
+	align-items: end;
+	row-gap: 14px;
+}
+
+.message__img {
+	width: 40px;
+	height: 40px;
+
+	margin-right: 14px;
+
+	border-radius: 50%;
+
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	position: relative;
+
+	grid-area: img;
+}
+
+.message__img--id0 {
+	background-image: url('/public/img/photos/id0.jpg');
+}
+
+.message__img--id1 {
+	background-image: url('/public/img/photos/id1.webp');
+}
+
+.message__img--id2 {
+	background-image: url('/public/img/photos/id2.jpeg');
+}
+
+.message__img--id3 {
+	background-image: url('/public/img/photos/id3.jpeg');
+}
+
+.message__img--id4 {
+	background-image: url('/public/img/photos/id4.jpeg');
+}
+
+.message__img--id5 {
+	background-image: url('/public/img/photos/id5.jpeg');
+}
+
+.message__img--id6 {
+	background-image: url('/public/img/photos/id6.jpeg');
+}
+
+.message__img--id7 {
+	background-image: url('/public/img/photos/id7.jpeg');
+}
+
+.message__img--id8 {
+	background-image: url('/public/img/photos/id8.jpeg');
+}
+
+.message__img--id9 {
+	background-image: url('/public/img/photos/id9.jpg');
+}
+
+.message__img::after {
+	content: '';
+	display: none;
+	width: 10px;
+	height: 10px;
+
+	position: absolute;
+	right: 1px;
+	bottom: 1px;
+
+	border-radius: 50%;
+	border: 1px solid var(--color-gray-2);
+}
+
+.message__img.online::after {
+	display: block;
+	background-color: var(--color-green);
+}
+
+.message__img.offline::after {
+	display: block;
+	background-color: var(--color-gray-3);
+}
+
+.message__text {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.6;
+	color: var(--color-white);
+
+	padding: 16px 18px 12px;
+	margin-right: 10px;
+
+	border-radius: 10px 10px 10px 0;
+	background-color: var(--color-secondary);
+
+	grid-area: text;
+}
+
+.message__time {
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--color-gray-3);
+
+	grid-area: time;
+}
+
+.message__btn {
+	display: block;
+	width: 16px;
+	height: 16px;
+
+	background-color: var(--color-primary);
+	mask: url('/public/img/icons/dots.svg') center / contain no-repeat;
+
+	grid-area: btn;
+	align-self: center;
+}
+
+/** Owner */
+
+.owner.message  {
+	margin-right: 0;
+	margin-left: auto;
+	grid-template-areas:	"btn text img"
+	". time .";
+	justify-content: end;
+}
+
+.owner.message .message__img {
+	margin-right: 0;
+}
+
+.owner.message .message__text {
+	color: var(--color-primary);
+
+	margin-right: 14px;
+
+	border-radius: 10px 10px 0 10px;
+	background-color: var(--color-gray-2);
+}
+
+.owner.message .message__time {
+	text-align: right;
+}
+
+.owner.message .message__btn {
+	margin-right: 10px;
+}

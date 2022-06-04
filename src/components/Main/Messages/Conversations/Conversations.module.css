@@ -1,0 +1,61 @@
+/*? Conversations */
+
+.conversation {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	grid-template-columns: 1fr;
+
+	height: 100%;
+}
+
+.conversation__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 20px;
+}
+
+.search {
+	flex-grow: 1;
+
+	margin-right: 20px;
+}
+
+.favorite__container {
+	border-radius: 10px;
+	background-color: var(--color-gray-2);
+}
+
+.favorite-btn {
+	display: block;
+	width: 42px;
+	height: 42px;
+
+	flex-shrink: 0;
+
+	border-radius: 10px;
+	mask: url('/public/img/icons/star-icon.svg') center / 12px no-repeat;
+	background:	var(--color-green);
+}
+
+.conversation__container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.conversation__list {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+
+	padding-bottom: 20px;
+}
+
+.conversation__list::-webkit-scrollbar {
+	display: none;
+}
+
+.conversation__item {}

@@ -9,6 +9,10 @@
 	padding: 10px 20px;
 }
 
+.nav::-webkit-scrollbar {
+	display: none;
+}
+
 .nav__list {
 	display: flex;
 	flex-direction: column;
