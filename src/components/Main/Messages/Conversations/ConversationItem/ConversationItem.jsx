@@ -1,4 +1,5 @@
 import style from './ConversationItem.module.css';
+import { NavLink } from 'react-router-dom';
 
 const ConversationItem = (props) => {
 
@@ -24,7 +25,10 @@ const ConversationItem = (props) => {
 	if (+props.notification > 0) notificationValue += 'enabled';
 
 	return (
-		<div className={style.item}>
+		<NavLink
+			className={navData => navData.isActive ? `${style.active} ${style.item}` : `${style.item}`}
+			to={`./${props.id}`}
+		>
 
 			<div className={`${style.item__img} ${style[statusValue]} ${style[`id${props.id}`]}`}></div>
 
@@ -44,7 +48,7 @@ const ConversationItem = (props) => {
 				${style[favoriteValue]}
 			`}></div>
 
-		</div>
+		</NavLink>
 	);
 };
 

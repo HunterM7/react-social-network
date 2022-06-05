@@ -19,7 +19,7 @@ const NavItem = (props) => {
 
 			</NavLink>
 
-		</li >
+		</li>
 	);
 };
 

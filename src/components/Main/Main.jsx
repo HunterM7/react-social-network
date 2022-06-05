@@ -9,9 +9,9 @@ const Main = () => {
 		<main className="main">
 
 			<Routes>
-				<Route path="/feed" element={<Feed />} />
-				<Route path="/messages" element={<Messages />} />
-				<Route path="/profile" element={<Profile />} />
+				<Route path="/feed/" element={<Feed />} />
+				<Route path="/messages/*" element={<Messages />} />
+				<Route path="/profile/" element={<Profile />} />
 			</Routes>
 
 		</main>

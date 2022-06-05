@@ -103,7 +103,7 @@ const Conversations = () => {
 						<ConversationItem
 							id='8'
 							name='Mila Harris'
-							status='online'
+							status='offline'
 							isFavorite='false'
 							notification='0'
 							message='Template message...'
@@ -114,7 +114,7 @@ const Conversations = () => {
 						<ConversationItem
 							id='9'
 							name='David Bradley'
-							status='online'
+							status='offline'
 							isFavorite='true'
 							notification='0'
 							message='Template message...'

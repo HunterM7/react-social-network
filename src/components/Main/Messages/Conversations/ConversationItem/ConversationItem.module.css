@@ -16,6 +16,10 @@
 	align-items: center;
 
 	border-radius: 10px;
+	background-color: var(--color-white);
+}
+
+.item.active {
 	background-color: var(--color-gray-2);
 }
 

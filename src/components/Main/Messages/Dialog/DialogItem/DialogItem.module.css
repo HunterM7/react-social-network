@@ -1,0 +1,17 @@
+/*? Dialog Item */
+
+.dialog {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+
+	padding: 26px;
+
+	overflow-y: auto;
+}
+
+/* .dialog__item {} */
+
+.dialog__item:not(:last-of-type) {
+	margin-bottom: 20px;
+}

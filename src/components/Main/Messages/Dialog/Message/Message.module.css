@@ -12,14 +12,13 @@
 								". time .";
 	justify-content: start;
 	align-items: end;
+	column-gap: 10px;
 	row-gap: 14px;
 }
 
 .message__img {
 	width: 40px;
 	height: 40px;
-
-	margin-right: 14px;
 
 	border-radius: 50%;
 
@@ -103,7 +102,6 @@
 	color: var(--color-white);
 
 	padding: 16px 18px 12px;
-	margin-right: 10px;
 
 	border-radius: 10px 10px 10px 0;
 	background-color: var(--color-secondary);
@@ -141,14 +139,10 @@
 	justify-content: end;
 }
 
-.owner.message .message__img {
-	margin-right: 0;
-}
+.owner.message .message__img {}
 
 .owner.message .message__text {
 	color: var(--color-primary);
-
-	margin-right: 14px;
 
 	border-radius: 10px 10px 0 10px;
 	background-color: var(--color-gray-2);
@@ -158,6 +152,4 @@
 	text-align: right;
 }
 
-.owner.message .message__btn {
-	margin-right: 10px;
-}
+.owner.message .message__btn {}
