@@ -34,15 +34,15 @@ const Messages = () => {
 			id: 3,
 			name: 'Eduardo Romero',
 			status: 'online',
-			isFavorite: true,
+			isFavorite: false,
 			notification: '0',
 			lastMessage: 'Hi! How are you?',
 		},
 		{
 			id: 4,
 			name: 'Adele Santa-Miro',
-			status: 'Offline',
-			isFavorite: true,
+			status: 'offline',
+			isFavorite: false,
 			notification: '0',
 			lastMessage: 'It was a lond day...',
 		},
@@ -65,7 +65,7 @@ const Messages = () => {
 		{
 			id: 7,
 			name: 'Peter Brown',
-			status: 'Offline',
+			status: 'offline',
 			isFavorite: false,
 			notification: '0',
 			lastMessage: 'Let\'s go!'
@@ -73,7 +73,7 @@ const Messages = () => {
 		{
 			id: 8,
 			name: 'Mila Harris',
-			status: 'Offline',
+			status: 'offline',
 			isFavorite: false,
 			notification: '0',
 			lastMessage: 'I think it was a very bad...'
@@ -81,7 +81,7 @@ const Messages = () => {
 		{
 			id: 9,
 			name: 'David Bradley',
-			status: 'Offline',
+			status: 'offline',
 			isFavorite: true,
 			notification: '0',
 			lastMessage: 'Ok, fine!'
