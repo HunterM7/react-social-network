@@ -6,8 +6,6 @@ const Message = (props) => {
 
 	if (props.isOwner === 'true') messageStyle = 'owner';
 
-	console.log(messageStyle);
-
 	return (
 		<div className={`
 			${style.message}
@@ -30,7 +28,7 @@ const Message = (props) => {
 
 			<button className={style.message__btn}></button>
 
-		</div >
+		</div>
 	)
 };
 

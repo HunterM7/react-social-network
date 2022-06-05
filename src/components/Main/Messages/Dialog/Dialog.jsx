@@ -1,5 +1,4 @@
 import style from './Dialog.module.css';
-import { Route, Routes } from 'react-router-dom';
 import DialogItem from './DialogItem/DialogItem';
 
 const Dialog = (props) => {
@@ -65,7 +64,7 @@ const Dialog = (props) => {
 
 			</div>
 
-		</section >
+		</section>
 	);
 };
 
