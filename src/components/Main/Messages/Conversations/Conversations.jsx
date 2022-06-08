@@ -4,7 +4,7 @@ import ConversationItem from './ConversationItem/ConversationItem';
 
 const Conversations = (props) => {
 
-	let conversationList = props.users.map(user => {
+	let conversationList = props.state.userDB.map(user => {
 
 		if (user.id !== 0) {
 			return (

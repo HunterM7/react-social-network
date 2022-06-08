@@ -18,6 +18,14 @@
 	--radius-1: 20px;
 	/* Effects */
 	--shadow-1: -2px 4px 12px rgba(0, 0, 0, 0.04);
+	/* Transition */
+	--trans-primary: all 0.1s ease;
+}
+
+*,
+*::before,
+*::after {
+	transition: var(--trans-primary);
 }
 
 html {
@@ -45,4 +53,13 @@ body {
 	grid-template-areas:
 								"header header header"
 								"nav main main";
+}
+
+.option__btn {
+	display: block;
+	width: 16px;
+	height: 16px;
+
+	background-color: var(--color-primary);
+	mask: url('/public/img/icons/dots.svg') center / contain no-repeat;
 }

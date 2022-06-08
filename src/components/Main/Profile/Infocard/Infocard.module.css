@@ -1,0 +1,100 @@
+/*? Infocard */
+
+.card {
+	padding: 22px 18px;
+
+	border-radius: 16px;
+	background-color: var(--color-white);
+}
+
+.card__title {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--color-primary);
+
+	margin-bottom: 24px;
+}
+
+.card__text {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--color-primary);
+}
+
+.card__text:not(:last-of-type) {
+	margin-bottom: 18px;
+}
+
+.card__text:last-of-type {
+	margin-bottom: 20px;
+}
+
+.card__text--icon {
+	position: relative;
+	
+	padding-left: 36px;
+}
+
+.card__text--icon::before {
+	content: '';
+	display: block;
+	width: 16px;
+	height: 16px;
+
+	mask-position: center;
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	background-color: var(--color-primary);
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.site.card__text--icon::before {
+	mask-image: url('/public/img/icons/explore.svg');
+}
+
+.sex.card__text--icon::before {
+	mask-image: url('/public/img/icons/profile.svg');
+}
+
+.birth.card__text--icon::before {
+	mask-image: url('/public/img/icons/cake-icon.svg');
+}
+
+.region.card__text--icon::before {
+	mask-image: url('/public/img/icons/region-icon.svg');
+}
+
+.fb.card__text--icon::before {
+	mask-image: url('/public/img/icons/facebook-icon.svg');
+}
+
+.tw.card__text--icon::before {
+	mask-image: url('/public/img/icons/twitter-icon.svg');
+}
+
+.inst.card__text--icon::before {
+	mask-image: url('/public/img/icons/instagram-icon.svg');
+}
+
+.card__btn {
+	font-size: 14px;
+	font-weight: 500;
+	color: #4e5d78;
+	text-align: center;
+
+	width: 100%;
+
+	border-radius: 10px;
+	background-color: var(--color-gray-2);
+
+
+
+	border-radius: 10px;
+	background-color: #F6F7F8;
+
+	padding: 14px 20px;
+}

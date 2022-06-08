@@ -12,6 +12,41 @@
 	background-color: #F9FAFB;
 }
 
+.main {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 250px auto 290px;
+	grid-template-areas: "info posts sidebar";
+	gap: 30px;
+
+	padding: 30px;
+}
+
+.main__sidebar {
+	border-radius: 16px;
+	background-color: var(--color-white);
+}
+
+.main__info {
+	grid-area: info;
+}
+
+.main__posts {
+	grid-area: posts;
+}
+
+.main__newPost {
+	margin-bottom: 30px;
+	box-shadow: var(--shadow-1);
+	border-radius: 16px;
+}
+
+.main__post {}
+
+.main__sidebar {
+	grid-area: sidebar;
+}
+
 
 .header {
 	width: 100%;
@@ -67,7 +102,7 @@
 
 	background-color: #4e5d78;
 
-	mask: url('/public/img/main/profile/header__bg-btn.svg') center / contain no-repeat;
+	mask: url('/public/img/icons/upload-icon.svg') center / contain no-repeat;
 }
 
 .header__info-btn {
@@ -98,12 +133,43 @@
 	width: 158px;
 	height: 158px;
 
+	position: relative;
+
 	border-radius: 50%;
 	border: 4px solid #fff;
 
 	background: url('/public/img/photos/id0.jpg') center / cover no-repeat;
 
 	margin-bottom: 16px;
+}
+
+.card__upload {
+	pointer-events: none;
+	opacity: 0;
+
+	width: 30px;
+	height: 30px;
+
+	position: absolute;
+	right: 4px;
+	bottom: 16px;
+
+	border-radius: 50%;
+	background-color: var(--color-white);
+}
+
+.card__img:hover .card__upload {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.card__btn {
+	width: 100%;
+	height: 100%;
+
+	border-radius: 50%;
+	background-color: var(--color-primary);
+	mask: url('/public/img/icons/upload-icon.svg') center / 14px no-repeat;
 }
 
 .card__name {

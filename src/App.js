@@ -3,7 +3,7 @@ import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Main from './components/Main/Main';
 
-const App = () => {
+const App = (props) => {
 	return (
 		<div className='app-wrapper'>
 
@@ -11,7 +11,7 @@ const App = () => {
 
 			<Navbar />
 
-			<Main />
+			<Main state={props.state} />
 
 		</div>
 	);

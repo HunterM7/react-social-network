@@ -1,0 +1,137 @@
+/*? New post */
+
+.newPost {
+	padding: 18px;
+
+	border-radius: 16px;
+	background-color: var(--color-white);
+	overflow: hidden;
+}
+
+.newPost__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.newPost__top {
+	display: grid;
+	grid-template-columns: 42px auto;
+	gap: 14px;
+
+	margin-bottom: 18px;
+}
+
+.newPost__bottom {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 14px;
+	justify-items: start;
+}
+
+.newPost__img {
+	width: 42px;
+	height: 42px;
+
+	border-radius: 50%;
+	background: url('/public/img/photos/id0.jpg') center / cover no-repeat;
+}
+
+.newPost__text {
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--color-primary);
+
+	resize: none;
+
+	height: 42px;
+
+	padding: 12px 10px;
+
+	border-radius: 10px;
+	background: var(--color-gray-2);
+}
+
+.newPost__text::placeholder {
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--color-gray-3);
+}
+
+.newPost__live,
+.newPost__input,
+.newPost__emoji {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--color-primary);
+
+	padding-left: 26px;
+
+	position: relative;
+}
+
+.newPost__live::before,
+.newPost__input::before,
+.newPost__emoji::before {
+	content: '';
+	display: block;
+	width: 16px;
+	height: 16px;
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+
+	background-color: var(--color-primary);
+	mask-position: center;
+	mask-size: contain;
+	mask-repeat: no-repeat;
+}
+
+.newPost__live {}
+
+.newPost__live::before {
+	mask-image: url('/public/img/icons/video-icon.svg');
+}
+
+.newPost__input {
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+	position: relative;
+
+	cursor: pointer;
+}
+
+.newPost__input::before {
+	mask-image: url('/public/img/icons/photo-icon.svg');
+}
+
+.newPost__file {
+	opacity: 0%;
+	width: 0.1px;
+	height: 0.1px;
+	position: absolute;
+}
+
+.newPost__emoji {
+}
+
+.newPost__emoji::before {
+	mask-image: url('/public/img/icons/emoji-icon.svg');
+}
+
+.newPost__submit {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--color-white);
+
+	padding: 12px 30px;
+
+	border-radius: 8px;
+	background-color: var(--color-secondary);
+
+	justify-self: end;
+}

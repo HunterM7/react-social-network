@@ -119,13 +119,6 @@
 }
 
 .message__btn {
-	display: block;
-	width: 16px;
-	height: 16px;
-
-	background-color: var(--color-primary);
-	mask: url('/public/img/icons/dots.svg') center / contain no-repeat;
-
 	grid-area: btn;
 	align-self: center;
 }

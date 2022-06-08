@@ -26,7 +26,10 @@ const Message = (props) => {
 				{props.time}
 			</div>
 
-			<button className={style.message__btn}></button>
+			<button className={`
+				option__btn
+				${style.message__btn}
+			`}></button>
 
 		</div>
 	)

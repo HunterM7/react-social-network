@@ -1,0 +1,68 @@
+/*? Post */
+
+.post {
+	padding: 18px;
+
+	border-radius: 16px;
+	background-color: var(--color-white);
+	overflow: hidden;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "img name btn" "img tags btn";
+	column-gap: 20px;
+	row-gap: 8px;
+	align-items: center;
+
+	margin-bottom: 18px;
+}
+
+.header__img {
+	width: 50px;
+	height: 50px;
+
+	border-radius: 50%;
+	background: url('/public/img/photos/id8.jpeg') center / cover no-repeat;
+
+	grid-area: img;
+}
+
+.header__name {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--color-primary);
+
+	grid-area: name;
+	align-self: end;
+}
+
+.header__metatags {
+	font-size: 12px;
+	font-weight: 500;
+	color: var(--color-gray-3);
+
+	grid-area: tags;
+	align-self: start;
+}
+
+.header__btn {
+	grid-area: btn;
+}
+
+.main {
+	width: 100%;
+	height: 268px;
+}
+
+.main__photo {
+	width: 100%;
+	height: 100%;
+
+	border-radius: 16px;
+
+	object-fit: cover;
+	object-position: center;
+}
