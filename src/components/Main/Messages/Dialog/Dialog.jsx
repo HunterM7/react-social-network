@@ -1,5 +1,6 @@
 import style from './Dialog.module.css';
 import DialogItem from './DialogItem/DialogItem';
+import Sendbar from '../../../other/Sendbar/Sendbar';
 
 const Dialog = (props) => {
 
@@ -47,20 +48,7 @@ const Dialog = (props) => {
 
 			<div className={style.footer}>
 
-				<div className={style.footer__message}>
-
-					<textarea className={style.footer__input} placeholder='Type something here...'></textarea>
-
-					<div className={style.footer__buttons}>
-						<button className={style.footer__btn}></button>
-						<button className={style.footer__btn}></button>
-					</div>
-
-				</div>
-
-				<div className={style['send-box']}>
-					<button className={style.send__btn}></button>
-				</div>
+				<Sendbar />
 
 			</div>
 

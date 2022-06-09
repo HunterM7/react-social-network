@@ -2,7 +2,28 @@ import style from './Profile.module.css';
 import Infocard from './Infocard/Infocard';
 import NewPost from '../Posts/NewPost/NewPost';
 import Post from '../Posts/Post/Post';
-const Profile = () => {
+
+const Profile = (props) => {
+
+	let postItems = props.state.posts.map(user => {
+		return (
+			<li className={style.post__item} key={user.id}>
+				<Post
+					id={user.id}
+					authorId={user.authorId}
+					likes={user.likes}
+					comments={user.comments}
+					shares={user.shares}
+					postTime={user.postTime}
+					category={user.category}
+					text={user.text}
+
+					addPost={props.addPost}
+				/>
+			</li>
+		)
+	});
+
 	return (
 		<section className={style.profile}>
 
@@ -40,12 +61,19 @@ const Profile = () => {
 				<div className={style.main__posts}>
 
 					<div className={style.main__newPost}>
-						<NewPost />
+
+						<NewPost
+							state={props.state}
+							addPost={props.addPost}
+						/>
+
 					</div>
 
-					<div className={style.main__post}>
-						<Post />
-					</div>
+					<ul className={style.post__list}>
+
+						{postItems}
+
+					</ul>
 
 				</div>
 

@@ -27,7 +27,7 @@ const Message = (props) => {
 			</div>
 
 			<button className={`
-				option__btn
+				optionBtn
 				${style.message__btn}
 			`}></button>
 

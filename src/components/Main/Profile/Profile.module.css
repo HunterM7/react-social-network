@@ -41,7 +41,16 @@
 	border-radius: 16px;
 }
 
-.main__post {}
+.post__list {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.post__item {}
+
+.main__post > *:not(:last-of-type) {
+	margin-bottom: 32px;
+}
 
 .main__sidebar {
 	grid-area: sidebar;
@@ -138,7 +147,7 @@
 	border-radius: 50%;
 	border: 4px solid #fff;
 
-	background: url('/public/img/photos/id0.jpg') center / cover no-repeat;
+	background: url('/public/img/photos/id0.jpeg') center / cover no-repeat;
 
 	margin-bottom: 16px;
 }

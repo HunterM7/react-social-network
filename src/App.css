@@ -11,7 +11,8 @@
 	--color-gray-1: #F9FAFB;
 	--color-gray-2: #F6F7F8;
 	--color-gray-3: #959EAE;
-	--color-gray-3: #B8BEC9;
+	--color-gray-4: #B8BEC9;
+	--color-gray-5: #DCDFE4;
 	--color-white: #ffffff;
 	--color-black: #000000;
 	/* Dimmensions */
@@ -55,11 +56,38 @@ body {
 								"nav main main";
 }
 
-.option__btn {
+.optionBtn {
 	display: block;
 	width: 16px;
 	height: 16px;
 
 	background-color: var(--color-primary);
 	mask: url('/public/img/icons/dots.svg') center / contain no-repeat;
+}
+
+.iconLink {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--color-primary);
+
+	padding-left: 26px;
+
+	position: relative;
+}
+
+.iconLink::before {
+	content: '';
+	display: block;
+	width: 16px;
+	height: 16px;
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+
+	background-color: var(--color-primary);
+	mask-position: center;
+	mask-size: contain;
+	mask-repeat: no-repeat;
 }

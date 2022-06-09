@@ -34,7 +34,7 @@
 	height: 42px;
 
 	border-radius: 50%;
-	background: url('/public/img/photos/id0.jpg') center / cover no-repeat;
+	background: url('/public/img/photos/id0.jpeg') center / cover no-repeat;
 }
 
 .newPost__text {
@@ -56,37 +56,6 @@
 	font-size: 14px;
 	font-weight: 400;
 	color: var(--color-gray-3);
-}
-
-.newPost__live,
-.newPost__input,
-.newPost__emoji {
-	font-size: 14px;
-	font-weight: 500;
-	color: var(--color-primary);
-
-	padding-left: 26px;
-
-	position: relative;
-}
-
-.newPost__live::before,
-.newPost__input::before,
-.newPost__emoji::before {
-	content: '';
-	display: block;
-	width: 16px;
-	height: 16px;
-
-	position: absolute;
-	top: 50%;
-	left: 0;
-	transform: translateY(-50%);
-
-	background-color: var(--color-primary);
-	mask-position: center;
-	mask-size: contain;
-	mask-repeat: no-repeat;
 }
 
 .newPost__live {}

@@ -1,5 +1,6 @@
 
 let state = {
+
 	userDB: [
 		{
 			id: 0,
@@ -8,6 +9,7 @@ let state = {
 			isFavorite: true,
 			notification: '0',
 			lastMessage: 'Thanks buddy, you to...',
+			mainPhoto: '/public/img/photos/id0.jpeg',
 		},
 		{
 			id: 1,
@@ -16,6 +18,7 @@ let state = {
 			isFavorite: false,
 			notification: '3',
 			lastMessage: 'We need to start a new...',
+			mainPhoto: '/public/img/photos/id1.jpeg',
 		},
 		{
 			id: 2,
@@ -24,6 +27,7 @@ let state = {
 			isFavorite: true,
 			notification: '0',
 			lastMessage: 'We need to start project...',
+			mainPhoto: '/public/img/photos/id2.jpeg',
 		},
 		{
 			id: 3,
@@ -32,6 +36,7 @@ let state = {
 			isFavorite: false,
 			notification: '0',
 			lastMessage: 'Hi! How are you?',
+			mainPhoto: '/public/img/photos/id3.jpeg',
 		},
 		{
 			id: 4,
@@ -40,6 +45,7 @@ let state = {
 			isFavorite: false,
 			notification: '0',
 			lastMessage: 'It was a lond day...',
+			mainPhoto: '/public/img/photos/id4.jpeg',
 		},
 		{
 			id: 5,
@@ -48,6 +54,7 @@ let state = {
 			isFavorite: true,
 			notification: '1',
 			lastMessage: 'XD Are you kiddin\'?',
+			mainPhoto: '/public/img/photos/id5.jpeg',
 		},
 		{
 			id: 6,
@@ -55,7 +62,8 @@ let state = {
 			status: 'online',
 			isFavorite: true,
 			notification: '2',
-			lastMessage: 'Yeah, I think so...'
+			lastMessage: 'Yeah, I think so...',
+			mainPhoto: '/public/img/photos/id6.jpeg',
 		},
 		{
 			id: 7,
@@ -63,7 +71,8 @@ let state = {
 			status: 'offline',
 			isFavorite: false,
 			notification: '0',
-			lastMessage: 'Let\'s go!'
+			lastMessage: 'Let\'s go!',
+			mainPhoto: '/public/img/photos/id7.jpeg',
 		},
 		{
 			id: 8,
@@ -71,7 +80,8 @@ let state = {
 			status: 'offline',
 			isFavorite: false,
 			notification: '0',
-			lastMessage: 'I think it was a very bad...'
+			lastMessage: 'I think it was a very bad...',
+			mainPhoto: '/public/img/photos/id8.jpeg',
 		},
 		{
 			id: 9,
@@ -79,9 +89,11 @@ let state = {
 			status: 'offline',
 			isFavorite: true,
 			notification: '0',
-			lastMessage: 'Ok, fine!'
+			lastMessage: 'Ok, fine!',
+			mainPhoto: '/public/img/photos/id9.jpeg',
 		},
 	],
+
 	messages: [
 		{ id: 0, message: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae placeat reiciendis cupiditate quo. Corporis quos, quidem impedit in libero consequatur.' },
 		{ id: 1, message: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Illum laboriosam earum provident.' },
@@ -94,6 +106,39 @@ let state = {
 		{ id: 8, message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptatem qui molestias hic laboriosam voluptate nisi alias illum vero provident dignissimos, optio ducimus minus in nulla.' },
 		{ id: 9, message: 'Lorem ipsum, dolor sit amet consectetur adipisicing.' },
 	],
-}
+
+	posts: [
+		{
+			id: 0,
+			authorId: 0,
+			likes: 12,
+			comments: 3,
+			shares: 17,
+			postTime: '15h',
+			category: 'Public',
+			text: 'If you think adventure is dangerous, try routine, it’s lethal Paulo Coelho! Good morning all friends.',
+		},
+	]
+
+};
+
+export const addPost = (postMessage) => {
+
+	let newPost = {
+		id: 1,
+		authorId: 0,
+		likes: 116,
+		comments: 27,
+		shares: 34,
+		postTime: '2h',
+		category: 'Travel',
+		text: postMessage,
+	}
+
+	console.log('posted');
+
+	state.posts.push(newPost);
+	console.log(state.posts);
+};
 
 export default state;

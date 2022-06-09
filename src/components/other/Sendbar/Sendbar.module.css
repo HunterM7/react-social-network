@@ -1,0 +1,93 @@
+/*? Sendbar */
+
+.sendbar {
+	display: flex;
+}
+
+.sendbar__message {
+	flex-grow: 1;
+
+	margin-right: 20px;
+
+	position: relative;
+}
+
+.sendbar__input {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--color-primary);
+
+	width: 100%;
+	height: 56px;
+
+	padding: 16px 70px 16px 20px;
+
+	resize: none;
+
+	position: relative;
+
+	border-radius: 10px;
+	border: 1px solid var(--color-gray-3);
+	background-color: var(--color-gray-1);
+}
+
+.sendbar__input::placeholder {
+	font-size: inherit;
+	font-weight: inherit;
+	color: inherit;
+
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+}
+
+.sendbar__buttons {
+	display: flex;
+	align-items: center;
+
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+}
+
+.sendbar__btn {
+	width: 16px;
+	height: 16px;
+
+	background-color: var(--color-primary);
+	mask-position: center;
+	mask-size: contain;
+	mask-repeat: no-repeat;
+}
+
+.sendbar__btn:first-of-type {
+	mask-image: url('/public/img/icons/attach-icon.svg');
+
+	margin-right: 14px;
+}
+
+.sendbar__btn:nth-of-type(2) {
+	mask-image: url('/public/img/icons/emoji-icon.svg');
+}
+
+.send-box {
+	width: 56px;
+	height: 56px;
+
+	flex-shrink: 0;
+
+	border-radius: 6px;
+	background-color: var(--color-gray-1);
+}
+
+.send__btn {
+	width: 56px;
+	height: 56px;
+
+	border-radius: 6px;
+	background-color: var(--color-secondary);
+	mask: url('/public/img/icons/send-icon.svg') center / 26px no-repeat;
+}
