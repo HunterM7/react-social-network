@@ -11,7 +11,12 @@ const App = (props) => {
 
 			<Navbar />
 
-			<Main state={props.state} addPost={props.addPost} />
+			<Main
+				state={props.state}
+				addPost={props.addPost}
+				newPostText={props.newPostText}
+				updateNewPostText={props.updateNewPostText}
+			/>
 
 		</div>
 	);

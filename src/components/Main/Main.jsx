@@ -17,6 +17,8 @@ const Main = (props) => {
 				<Route path="/profile/" element={<Profile
 					state={props.state}
 					addPost={props.addPost}
+					newPostText={props.state.newPostText}
+					updateNewPostText={props.updateNewPostText}
 				/>} />
 			</Routes>
 

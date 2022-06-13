@@ -3,15 +3,20 @@ import { React, useRef } from 'react';
 
 const NewPost = (props) => {
 
+	//* Changing post text
+
+	const onPostChange = () => {
+		let text = newPostText.current.value;
+
+		props.updateNewPostText(text);
+	};
+
 	//* Pushing post
 
 	let newPostText = useRef(null);
 
-	const post = () => {
-
-		let text = newPostText.current.value;
-
-		props.addPost(text);
+	const addPost = () => {
+		props.addPost();
 	};
 
 	return (
@@ -23,7 +28,13 @@ const NewPost = (props) => {
 
 					<div className={style.newPost__img}></div>
 
-					<textarea ref={newPostText} className={style.newPost__text} placeholder="What's happening?" />
+					<textarea
+						ref={newPostText}
+						className={style.newPost__text}
+						placeholder="What's happening?"
+						value={props.newPostText}
+						onChange={onPostChange}
+					/>
 
 				</div>
 
@@ -54,7 +65,7 @@ const NewPost = (props) => {
 
 					<button
 						// type='submit'
-						onClick={post}
+						onClick={addPost}
 						className={style.newPost__submit}
 					>Post</button>
 

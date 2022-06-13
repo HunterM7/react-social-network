@@ -65,6 +65,8 @@ const Profile = (props) => {
 						<NewPost
 							state={props.state}
 							addPost={props.addPost}
+							newPostText={props.newPostText}
+							updateNewPostText={props.updateNewPostText}
 						/>
 
 					</div>
