@@ -18,7 +18,7 @@ const Profile = (props) => {
 					category={user.category}
 					text={user.text}
 
-					addPost={props.addPost}
+					dispatch={props.dispatch}
 				/>
 			</li>
 		)
@@ -64,9 +64,7 @@ const Profile = (props) => {
 
 						<NewPost
 							state={props.state}
-							addPost={props.addPost}
-							newPostText={props.newPostText}
-							updateNewPostText={props.updateNewPostText}
+							dispatch={props.dispatch}
 						/>
 
 					</div>

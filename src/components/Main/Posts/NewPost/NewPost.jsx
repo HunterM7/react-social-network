@@ -5,18 +5,23 @@ const NewPost = (props) => {
 
 	//* Changing post text
 
+	let newPostText = useRef(null);
+
 	const onPostChange = () => {
 		let text = newPostText.current.value;
 
-		props.updateNewPostText(text);
+		props.dispatch({
+			type: 'UPDATE-NEW-POST-TEXT',
+			text: text,
+		});
 	};
 
 	//* Pushing post
 
-	let newPostText = useRef(null);
-
 	const addPost = () => {
-		props.addPost();
+		props.dispatch({
+			type: 'ADD-POST',
+		});
 	};
 
 	return (

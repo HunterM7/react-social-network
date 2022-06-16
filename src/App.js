@@ -13,9 +13,7 @@ const App = (props) => {
 
 			<Main
 				state={props.state}
-				addPost={props.addPost}
-				newPostText={props.newPostText}
-				updateNewPostText={props.updateNewPostText}
+				dispatch={props.dispatch}
 			/>
 
 		</div>
