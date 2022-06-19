@@ -1,4 +1,4 @@
-### Link: https://hunterm7.github.io/
+### Link: https://hunterm7.github.io/mysocialnetwork/
 
 # Getting Started with Create React App
 
