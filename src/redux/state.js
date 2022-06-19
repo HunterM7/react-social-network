@@ -1,3 +1,8 @@
+//? == Constants ==
+
+const addPost = 'ADD-POST';
+const updateNewPostText = 'UPDATE-NEW-POST-TEXT';
+
 
 //? == Store ==
 
@@ -172,10 +177,10 @@ let store = {
 
 	dispatch(action) {
 
-		if (action.type === 'ADD-POST') {
+		if (action.type === addPost) {
 			this._addPost();
 		}
-		else if (action.type === 'UPDATE-NEW-POST-TEXT') {
+		else if (action.type === updateNewPostText) {
 			this._updateNewPostText(action.text);
 		}
 
@@ -184,5 +189,22 @@ let store = {
 }
 
 export default store;
+
+
+//* Action Creators
+
+export const addPostActionCreator = () => {
+	return {
+		type: addPost,
+	}
+};
+
+export const updateNewPostTextActionCreator = (text) => {
+	return {
+		type: updateNewPostText,
+		text: text,
+	}
+};
+
 
 window.store = store;
