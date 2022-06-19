@@ -1,4 +1,4 @@
-### Link: https://hunterm7.github.io/react-app/build/
+### Link: https://hunterm7.github.io/
 
 # Getting Started with Create React App
 
